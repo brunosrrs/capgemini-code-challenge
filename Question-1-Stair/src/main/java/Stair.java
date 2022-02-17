@@ -10,7 +10,7 @@ public class Stair {
             System.out.print("Enter an integer: ");
             int height = sc.nextInt();
             System.out.println("You entered " + height);
-            buildinStairs(height);
+            buildingStairs(height);
         } catch (InputMismatchException e){
             System.out.println("You have entered invalid data");
 
@@ -18,8 +18,9 @@ public class Stair {
 
     }
 
-    static void buildinStairs (int height){
+    static void buildingStairs (int height){
 
+        System.out.println("--- Building up stairs 📏 ---");
         for (int simbols = 1; simbols <= height; simbols++){
             int spaces = height - simbols;
 
