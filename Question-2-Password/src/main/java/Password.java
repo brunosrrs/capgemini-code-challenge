@@ -9,9 +9,9 @@ public class Password {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Type your password: ");
-        String senha = sc.nextLine();
-        missingMessages(senha);
-        hasValidPassword(senha);
+        String password = sc.nextLine();
+        missingMessages(password);
+        hasValidPassword(password);
 
     }
 
