@@ -5,18 +5,24 @@ public class Stair {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        int height = sc.nextInt();
+        hasValidPassword(height);
 
+
+    }
+
+
+    static void hasValidPassword(int h){
         try{
-            System.out.print("Enter an integer: ");
-            int height = sc.nextInt();
-            System.out.println("You entered " + height);
-            buildingStairs(height);
+            System.out.println("You entered " + h);
+            buildingStairs(h);
         } catch (InputMismatchException e){
             System.out.println("You have entered invalid data");
 
         }
-
     }
+
 
     static void buildingStairs (int height){
 
