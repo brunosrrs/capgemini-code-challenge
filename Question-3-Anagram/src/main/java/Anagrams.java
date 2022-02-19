@@ -8,10 +8,10 @@ public class Anagrams {
         Scanner sc = new Scanner(System.in);
         System.out.println("Type a word: ");
         String word = sc.nextLine();
-        VerifyAnagram(word);
+        verifyAnagram(word);
     }
 
-    static void VerifyAnagram(String p){
+    static void verifyAnagram(String p){
         HashMap<String, Integer> map= new HashMap<>();
 
         for(int i = 0; i < p.length(); i++){
